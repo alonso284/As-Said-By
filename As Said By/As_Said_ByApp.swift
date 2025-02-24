@@ -12,7 +12,8 @@ import SwiftData
 struct As_Said_ByApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Author.self,
+            Quote.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
